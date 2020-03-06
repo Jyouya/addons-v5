@@ -1,0 +1,10 @@
+<package>
+  <name>shared_target_service</name>
+  <version>0.0.0.1</version>
+  <type>service</type>
+  <dependencies>
+    <dependency>player</dependency>
+    <dependency>entities</dependency>
+    <dependency>target</dependency>
+  </dependencies>
+</package>
