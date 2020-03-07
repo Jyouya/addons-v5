@@ -29,12 +29,11 @@
     <type>library</type>
     <dependencies>
       <dependency>player</dependency>
-      <dependency>event</dependency>
       <dependency>target</dependency>
     </dependencies>
     <files>
-      <file size="261">player_control/manifest.xml</file>
-      <file size="1789">player_control/player_control.lua</file>
+      <file size="222">player_control/manifest.xml</file>
+      <file size="1794">player_control/player_control.lua</file>
     </files>
   </package>
   <package>
