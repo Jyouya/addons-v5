@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package>
+    <name>auto_face_target</name>
+    <version>0.0.0.1</version>
+    <type>addon</type>
+    <dependencies>
+      <dependency>shared_target_service</dependency>
+      <dependency>player</dependency>
+      <dependency>player_control</dependency>
+    </dependencies>
+    <files>
+      <file size="1934">auto_face_target/auto_face_target.lua</file>
+      <file size="279">auto_face_target/manifest.xml</file>
+    </files>
+  </package>
+  <package>
+    <name>mode</name>
+    <version>0.0.0.1</version>
+    <type>library</type>
+    <files>
+      <file size="133">mode/manifest.xml</file>
+      <file size="11645">mode/mode.lua</file>
+    </files>
+  </package>
+  <package>
+    <name>player_control</name>
+    <version>0.0.0.1</version>
+    <type>library</type>
+    <dependencies>
+      <dependency>player</dependency>
+      <dependency>event</dependency>
+      <dependency>target</dependency>
+    </dependencies>
+    <files>
+      <file size="261">player_control/manifest.xml</file>
+      <file size="1789">player_control/player_control.lua</file>
+    </files>
+  </package>
+  <package>
+    <name>roller</name>
+    <version>0.0.0.1</version>
+    <type>addon</type>
+    <dependencies>
+      <dependency>player</dependency>
+      <dependency>player_control</dependency>
+    </dependencies>
+    <files>
+      <file size="217">roller/manifest.xml</file>
+      <file size="1359">roller/roller.lua</file>
+    </files>
+  </package>
+  <package>
+    <name>shared_target_service</name>
+    <version>0.0.0.1</version>
+    <type>service</type>
+    <dependencies>
+      <dependency>player</dependency>
+      <dependency>entities</dependency>
+      <dependency>target</dependency>
+    </dependencies>
+    <files>
+      <file size="265">shared_target_service/manifest.xml</file>
+      <file size="973">shared_target_service/shared_target_service.lua</file>
+    </files>
+  </package>
+</packages>

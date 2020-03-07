@@ -1,9 +1,8 @@
 <package>
-  <name>auto_face_target</name>
+  <name>roller</name>
   <version>0.0.0.1</version>
   <type>addon</type>
   <dependencies>
-    <dependency>shared_target_service</dependency>
     <dependency>player</dependency>
     <dependency>player_control</dependency>
   </dependencies>

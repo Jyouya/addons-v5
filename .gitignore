@@ -1,0 +1,4 @@
+.editorconfig
+.lua-settings.conf
+.vscode
+build-package-xml.ps1
