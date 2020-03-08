@@ -3,7 +3,7 @@
   <version>0.0.0.1</version>
   <type>addon</type>
   <dependencies>
-    <dependency>shared_target_service</dependency>
+    <dependency>shared_target</dependency>
     <dependency>player</dependency>
     <dependency>player_control</dependency>
   </dependencies>
