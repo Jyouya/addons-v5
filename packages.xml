@@ -50,7 +50,7 @@
     </files>
   </package>
   <package>
-    <name>target_service</name>
+    <name>shared_target</name>
     <version>0.0.0.1</version>
     <type>library</type>
     <dependencies>
@@ -60,7 +60,7 @@
       <dependency>shared_target_service</dependency>
     </dependencies>
     <files>
-      <file size="310">shared_target/manifest.xml</file>
+      <file size="309">shared_target/manifest.xml</file>
       <file size="1333">shared_target/shared_target.lua</file>
     </files>
   </package>
