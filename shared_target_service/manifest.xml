@@ -3,8 +3,7 @@
   <version>0.0.0.1</version>
   <type>service</type>
   <dependencies>
-    <dependency>player</dependency>
-    <dependency>entities</dependency>
-    <dependency>target</dependency>
+    <dependency>shared</dependency>
+    <dependency>struct</dependency>
   </dependencies>
 </package>

@@ -1,46 +1,23 @@
-local shared = require('core.shared')
-local target_index
-local target_index_lock_on
-local player = require('player')
-local entities = require('entities')
-local target = require('target')
+local server = require('shared.server')
+local struct = require('struct')
+local event = require('core.event')
 
-shared_target = shared.new('shared_target')
+local data = server.new(struct.struct({
+    target_index = {struct.int32},
+    target_index_lock = {struct.int32},
+    set = {data = event.new()},
+    lock = {data = event.new()},
+    unlock = {data = event.new()}
+}))
 
-shared.data = {
-    target_index = target_index,
-    target_index_lock_on = target_index_lock_on,
-    get = function(self)
-        print(self.target_index)
-        if player.target_index ~= self.target_index then
-            self.target_index = player.target_index
-        end
+data.set:register(function(target_index)
+    data.target_index = target_index
+end)
 
-        local target
+data.lock:register(function(target_index)
+    data.target_index_lock = target_index
+end)
 
-        if self.target_index_lock_on then
-            target = entities[self.target_index_lock_on]
-            if not target then
-                self.target_index_lock_on = nil
-            end
-        end
-
-        if not target and self.target_index then
-            target = entities[self.target_index]
-        end
-
-        return target
-    end,
-    set = function(self, entity_index)
-        self.target_index = entity_index
-        target.set(entity_index)
-    end,
-    lock_on = function(self, entity_index)
-        self.target_index_lock_on = entity_index
-    end,
-    unlock = function(self)
-        self.target_index_lock_on = nil
-    end
-}
-shared.env = {}
-
+data.unlock:register(function()
+    data.target_index_lock = nil
+end)

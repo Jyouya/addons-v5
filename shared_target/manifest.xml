@@ -4,5 +4,9 @@
   <type>library</type>
   <dependencies>
     <dependency>shared_target_service</dependency>
+    <dependency>shared</dependency>
+    <dependency>player</dependency>
+    <dependency>target</dependency>
+    <dependency>entities</dependency>
   </dependencies>
 </package>

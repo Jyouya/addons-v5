@@ -55,10 +55,14 @@
     <type>library</type>
     <dependencies>
       <dependency>shared_target_service</dependency>
+      <dependency>shared</dependency>
+      <dependency>player</dependency>
+      <dependency>target</dependency>
+      <dependency>entities</dependency>
     </dependencies>
     <files>
-      <file size="196">shared_target/manifest.xml</file>
-      <file size="440">shared_target/shared_target.lua</file>
+      <file size="346">shared_target/manifest.xml</file>
+      <file size="1130">shared_target/shared_target.lua</file>
     </files>
   </package>
   <package>
@@ -66,13 +70,12 @@
     <version>0.0.0.1</version>
     <type>service</type>
     <dependencies>
-      <dependency>player</dependency>
-      <dependency>entities</dependency>
-      <dependency>target</dependency>
+      <dependency>shared</dependency>
+      <dependency>struct</dependency>
     </dependencies>
     <files>
-      <file size="265">shared_target_service/manifest.xml</file>
-      <file size="1246">shared_target_service/shared_target_service.lua</file>
+      <file size="226">shared_target_service/manifest.xml</file>
+      <file size="596">shared_target_service/shared_target_service.lua</file>
     </files>
   </package>
 </packages>
