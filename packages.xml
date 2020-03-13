@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <packages>
   <package>
+    <name />
+    <version />
+    <type />
+    <files>
+      <file size="0">auto_ra/manifest.xml</file>
+    </files>
+  </package>
+  <package>
     <name>autoface</name>
     <version>0.1.0.0</version>
     <type>addon</type>
@@ -25,16 +33,15 @@
   </package>
   <package>
     <name>player_control</name>
-    <version>0.0.0.1</version>
+    <version>0.1.0.0</version>
     <type>library</type>
     <dependencies>
       <dependency>player</dependency>
-      <dependency>event</dependency>
       <dependency>target</dependency>
     </dependencies>
     <files>
-      <file size="261">player_control/manifest.xml</file>
-      <file size="1869">player_control/player_control.lua</file>
+      <file size="225">player_control/manifest.xml</file>
+      <file size="1840">player_control/player_control.lua</file>
     </files>
   </package>
   <package>
@@ -68,15 +75,15 @@
   </package>
   <package>
     <name>shared_target_service</name>
-    <version>0.0.0.1</version>
+    <version>0.1.0.0</version>
     <type>service</type>
     <dependencies>
       <dependency>shared</dependency>
       <dependency>struct</dependency>
     </dependencies>
     <files>
-      <file size="226">shared_target_service/manifest.xml</file>
-      <file size="596">shared_target_service/shared_target_service.lua</file>
+      <file size="217">shared_target_service/manifest.xml</file>
+      <file size="229">shared_target_service/shared_target_service.lua</file>
     </files>
   </package>
 </packages>

@@ -1,7 +1,6 @@
 local target = require('target')
 local coroutine = require('coroutine')
-local event = require('event')
-local player = require('player')
+local event = require('core.event')
 local math = require('math')
 
 local distance_tolerance_squared = .2
