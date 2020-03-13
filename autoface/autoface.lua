@@ -1,4 +1,4 @@
-local shared = require('core.shared')
+-- local shared = require('core.shared')
 local command = require('core.command')
 local ui = require('core.ui')
 local coroutine = require('coroutine')
@@ -7,14 +7,22 @@ local shared_target = require('shared_target')
 local player_control = require('player_control')
 
 local enabled = false
-local window_state = {title = 'Auto Face Target', style = 'chromeless'}
+local window_state = {
+    title = 'Auto Face Target',
+    style = 'chromeless',
+    width = 100,
+    height = 30,
+    resizable = false,
+    color = ui.color.rgb(0,0,0,0)
+}
+local bit = require('bit')
 
 local function face_target()
     if enabled then
         local target_entity = shared_target.get()
 
         -- test if target_entity exists and is not a player
-        if target_entity and bit.band(target_entity.id, 0xFF000000) then
+        if target_entity and bit.band(target_entity.id, 0xFF000000) ~= 0 then
 
             -- Now, just turn the player towards the target
             player_control.face_position(target_entity.position.x,
@@ -49,6 +57,7 @@ ui.display(function()
         if ui.button('button1', 'Auto Face ' .. (enabled and 'On' or 'Off'),
                      {checked = enabled}) then
             enabled = not enabled
+            face_target()
         end
     end)
 end)

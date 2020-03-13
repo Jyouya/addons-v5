@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <packages>
   <package>
-    <name>auto_face_target</name>
-    <version>0.0.0.1</version>
+    <name>autoface</name>
+    <version>0.1.0.0</version>
     <type>addon</type>
     <dependencies>
       <dependency>shared_target</dependency>
@@ -10,8 +10,8 @@
       <dependency>player_control</dependency>
     </dependencies>
     <files>
-      <file size="1908">auto_face_target/auto_face_target.lua</file>
-      <file size="271">auto_face_target/manifest.xml</file>
+      <file size="2014">autoface/autoface.lua</file>
+      <file size="253">autoface/manifest.xml</file>
     </files>
   </package>
   <package>
@@ -29,11 +29,12 @@
     <type>library</type>
     <dependencies>
       <dependency>player</dependency>
+      <dependency>event</dependency>
       <dependency>target</dependency>
     </dependencies>
     <files>
-      <file size="222">player_control/manifest.xml</file>
-      <file size="1794">player_control/player_control.lua</file>
+      <file size="261">player_control/manifest.xml</file>
+      <file size="1869">player_control/player_control.lua</file>
     </files>
   </package>
   <package>
@@ -51,7 +52,7 @@
   </package>
   <package>
     <name>shared_target</name>
-    <version>0.0.0.1</version>
+    <version>0.1.0.0</version>
     <type>library</type>
     <dependencies>
       <dependency>shared_target_service</dependency>
@@ -61,8 +62,8 @@
       <dependency>entities</dependency>
     </dependencies>
     <files>
-      <file size="346">shared_target/manifest.xml</file>
-      <file size="1130">shared_target/shared_target.lua</file>
+      <file size="334">shared_target/manifest.xml</file>
+      <file size="1060">shared_target/shared_target.lua</file>
     </files>
   </package>
   <package>

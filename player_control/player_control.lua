@@ -1,15 +1,17 @@
 local target = require('target')
 local coroutine = require('coroutine')
-local event = require('core.event')
+local event = require('event')
 local player = require('player')
+local math = require('math')
 
 local distance_tolerance_squared = .2
 
 local messaging = event.new()
 
 local function face(x, y)
-    local heading = math.atan2(y - player.pos.y, x - player.pos.x)
-    target.me.display.heading = heading
+    local heading = math.atan2(y - target.me.position.y,
+                               x - target.me.position.x)
+    target.me.display.heading = - heading
 end
 
 local function move_to_factory(x, y, timeout)

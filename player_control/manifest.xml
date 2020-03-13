@@ -3,7 +3,8 @@
   <version>0.0.0.1</version>
   <type>library</type>
   <dependencies>  
-    <dependency>player</dependency>
+    <dependency>player</dependency>   
+    <dependency>event</dependency>
     <dependency>target</dependency>	  
   </dependencies>
 </package>

@@ -1,6 +1,6 @@
 <package>
-  <name>auto_face_target</name>
-  <version>0.0.0.1</version>
+  <name>autoface</name>
+  <version>0.1.0.0</version>
   <type>addon</type>
   <dependencies>
     <dependency>shared_target</dependency>
