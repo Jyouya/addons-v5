@@ -1,11 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <packages>
   <package>
-    <name />
-    <version />
-    <type />
+    <name>autoface</name>
+    <version>0.0.0.1</version>
+    <type>addon</type>
+    <dependencies>
+      <dependency>shared_target</dependency>
+      <dependency>action</dependency>
+      <dependency>equipment</dependency>
+      <dependency>mode</dependency>
+      <dependency>player</dependency>
+      <dependency>packets</dependency>
+      <dependency>command</dependency>
+      <dependency>resources</dependency>
+      <dependency>status_effects</dependency>
+      <dependency>ui</dependency>
+    </dependencies>
     <files>
-      <file size="0">auto_ra/manifest.xml</file>
+      <file size="8724">auto_ra/auto_ra.lua</file>
+      <file size="522">auto_ra/manifest.xml</file>
+      <file size="1101">auto_ra/statics.lua</file>
+      <file size="1982">auto_ra/weaponskills.lua</file>
     </files>
   </package>
   <package>
