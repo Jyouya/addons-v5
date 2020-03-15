@@ -9,9 +9,7 @@
     <dependency>mode</dependency>
     <dependency>player</dependency>
     <dependency>packets</dependency>
-    <dependency>command</dependency>
     <dependency>resources</dependency>
     <dependency>status_effects</dependency>
-    <dependency>ui</dependency>
   </dependencies>
 </package>

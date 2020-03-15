@@ -11,14 +11,12 @@
       <dependency>mode</dependency>
       <dependency>player</dependency>
       <dependency>packets</dependency>
-      <dependency>command</dependency>
       <dependency>resources</dependency>
       <dependency>status_effects</dependency>
-      <dependency>ui</dependency>
     </dependencies>
     <files>
-      <file size="8724">auto_ra/auto_ra.lua</file>
-      <file size="522">auto_ra/manifest.xml</file>
+      <file size="8734">auto_ra/auto_ra.lua</file>
+      <file size="451">auto_ra/manifest.xml</file>
       <file size="1101">auto_ra/statics.lua</file>
       <file size="1982">auto_ra/weaponskills.lua</file>
     </files>

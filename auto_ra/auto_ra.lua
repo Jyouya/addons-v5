@@ -5,11 +5,11 @@ local player = require('player')
 local action = require('action')
 local shared_target = require('shared_target')
 local packets = require('packets')
-local command = require('command')
+local command = require('core.command')
 local statics = require('statics') -- ? ./statics
 local res = require('resources')
 local buffs = require('status_effects')
-local ui = require('ui')
+local ui = require('core.ui')
 
 local settings = {enabled = false, stop_on_tp = false}
 
