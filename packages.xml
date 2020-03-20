@@ -15,7 +15,7 @@
       <dependency>status_effects</dependency>
     </dependencies>
     <files>
-      <file size="8734">auto_ra/auto_ra.lua</file>
+      <file size="8767">auto_ra/auto_ra.lua</file>
       <file size="450">auto_ra/manifest.xml</file>
       <file size="1101">auto_ra/statics.lua</file>
       <file size="1982">auto_ra/weaponskills.lua</file>
@@ -31,7 +31,7 @@
       <dependency>player_control</dependency>
     </dependencies>
     <files>
-      <file size="2014">autoface/autoface.lua</file>
+      <file size="2015">autoface/autoface.lua</file>
       <file size="253">autoface/manifest.xml</file>
     </files>
   </package>
@@ -72,7 +72,7 @@
   </package>
   <package>
     <name>shared_target</name>
-    <version>0.1.0.0</version>
+    <version>0.2.0.0</version>
     <type>library</type>
     <dependencies>
       <dependency>shared_target_service</dependency>
@@ -83,12 +83,12 @@
     </dependencies>
     <files>
       <file size="334">shared_target/manifest.xml</file>
-      <file size="1060">shared_target/shared_target.lua</file>
+      <file size="1114">shared_target/shared_target.lua</file>
     </files>
   </package>
   <package>
     <name>shared_target_service</name>
-    <version>0.1.0.0</version>
+    <version>0.2.0.0</version>
     <type>service</type>
     <dependencies>
       <dependency>shared</dependency>
@@ -96,7 +96,7 @@
     </dependencies>
     <files>
       <file size="217">shared_target_service/manifest.xml</file>
-      <file size="229">shared_target_service/shared_target_service.lua</file>
+      <file size="193">shared_target_service/shared_target_service.lua</file>
     </files>
   </package>
 </packages>

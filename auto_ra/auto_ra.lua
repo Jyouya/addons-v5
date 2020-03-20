@@ -18,13 +18,15 @@ do
     local weaponskills = require('weaponskills') -- ? should it be ./weaponskills
 
     get_usable_weaponskills = function(skill, main, sub)
-        return weaponskills[skill]:filter(
-                   function(el)
-                return el.jobs:contains(main) and
+        return weaponskills[skill]
+            :filter(
+                function(el)
+                    return el.jobs:contains(main) and
                            (not el.requirements or
                                el.requirements:contains(main) or
                                el.requirements:contains(sub))
-            end):keys()
+                end)
+            :keys()
     end
 end
 

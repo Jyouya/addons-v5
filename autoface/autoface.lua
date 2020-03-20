@@ -19,7 +19,7 @@ local bit = require('bit')
 
 local function face_target()
     if enabled then
-        local target_entity = shared_target.get()
+        local target_entity = shared_target.entity
 
         -- test if target_entity exists and is not a player
         if target_entity and bit.band(target_entity.id, 0xFF000000) ~= 0 then
